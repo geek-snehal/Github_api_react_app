@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.nav-wrapper {
+width: 100vw;
+height: 100px;
+background-color:#203843;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding-right: 50px;
+color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-button-container {
+display: flex;
+list-style: none;
+padding-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-button {
+  margin-right: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.nav-button a {
+  text-decoration: none;
+  color: white;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.nav-left h2 {
+  font-size: 2em;
+}
+.user-detail-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.big-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 500px;
+  height: 700px;
+  padding: 20px;
+  background-color: #e2dfdf;
+  -webkit-box-shadow: 8px 4px 12px 0px rgba(50, 50, 50, 0.75);
+  -moz--box-shadow: 8px 4px 12px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 8px 4px 12px 0px rgba(50, 50, 50, 0.75);
+}
+
+.card-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-image {
+  width: 300px;
+  height: 300px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-data span {
+  margin-left: 20px;
+}
+
+.card-button {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 20px;
+  background-color: #151313;
+  font-weight: bolder;
 }
